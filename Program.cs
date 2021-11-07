@@ -25,7 +25,7 @@ namespace sda_csharp_exercises
                     containsLowerCharacter = true;
                 }
 
-                if (Char.IsLower(character))
+                if (Char.IsUpper(character))
                 {
                     containsUpperCharacter = true;
                 }
