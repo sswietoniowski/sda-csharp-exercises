@@ -33,7 +33,7 @@ namespace sda_csharp_exercises
             return $"{{ firstName: \"{FirstName}\", lastName: \"{LastName}\", yearOfBirth: {YearOfBirth} }}"; // { firstName: "Jan", lastName: "Kowalski" }
         }
 
-        public bool IsAdult() => DateTime.Today.Year - YearOfBirth >= 18;
+        protected bool IsAdult() => DateTime.Today.Year - YearOfBirth >= 18;
         //{
         //    return DateTime.Today.Year - YearOfBirth >= 18;
         //}

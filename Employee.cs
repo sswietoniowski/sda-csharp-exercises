@@ -29,6 +29,7 @@ namespace sda_csharp_exercises
         {
             base.WhoAmI();
             Console.WriteLine($"Salary = {Salary}");
+            //this.IsAdult();
         }
 
         public override string ToString()

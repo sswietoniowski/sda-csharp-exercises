@@ -6,4 +6,8 @@
     <RootNamespace>sda_csharp_exercises</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HelperLibrary\HelperLibrary.csproj" />
+  </ItemGroup>
+
 </Project>
