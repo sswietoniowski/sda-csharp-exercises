@@ -31,7 +31,12 @@ namespace sda_csharp_exercises
 
         public override string ToString()
         {
-            return $"{{ firstName: \"{FirstName}\", lastName: \"{LastName}\", yearOfBirth: {YearOfBirth}, salary: {Salary} }}"; // { firstName: "Jan", lastName: "Kowalski" }
+            return $"{{ firstName: \"{FirstName}\", lastName: \"{LastName}\", yearOfBirth: {YearOfBirth}, salary: {GetSalary()} }}"; // { firstName: "Jan", lastName: "Kowalski" }
+        }
+
+        public virtual decimal GetSalary()
+        {
+            return Salary;
         }
     }
 }
