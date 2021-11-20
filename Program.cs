@@ -26,9 +26,11 @@ namespace sda_csharp_exercises
             employee.YearOfBirth = 1981;
             employee.Salary = 5000;
             employee.WhoAmI();
-            Person person = new Person(firstName: "Adam", lastName: "Nowak");
-            person.WhoAmI();
-            Console.WriteLine(person.YearOfBirth);
+            Employee employee2 = new Employee("Adam", "Nowak", 2000, 5000);
+            employee2.WhoAmI();
+            //Person person = new Person(firstName: "Adam", lastName: "Nowak");
+            //person.WhoAmI();
+            //Console.WriteLine(person.YearOfBirth);
         }
     }
 }
