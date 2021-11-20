@@ -16,15 +16,15 @@ namespace sda_csharp_exercises
             {
                 return firstName;
             }
-            set
+            private set
             {
                 firstName = value;
             }
         }
 
-        public string LastName { get; set; }
+        public string LastName { get; }
 
-        public int YearOfBirth { get; set; }
+        public int YearOfBirth { get; }
 
         public Person(string firstName = "", string lastName = "", int yearOfBirth = 1900)
         {

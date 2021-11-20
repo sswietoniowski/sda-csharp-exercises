@@ -8,7 +8,7 @@ namespace sda_csharp_exercises
 {
     class Employee : Person
     {
-        public decimal Salary { get; set; }
+        public decimal Salary { get; }
 
         public Employee() : this("", "", 1900, 0)
         {
@@ -18,6 +18,8 @@ namespace sda_csharp_exercises
         public Employee(string firstName, string lastName, int yearOfBirth, decimal salary) :
             base(firstName, lastName, yearOfBirth)
         {
+            //LastName = "";
+
             Console.WriteLine("Called Employee constructor with parameters.");
 
             Salary = salary;
