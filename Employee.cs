@@ -8,7 +8,7 @@ namespace sda_csharp_exercises
 {
     class Employee : Person
     {
-        public decimal Salary { get; }
+        public decimal Salary { get; init; }
 
         public Employee() : this("", "", 1900, 0)
         {

@@ -8,23 +8,11 @@ namespace sda_csharp_exercises
 {
     class Person
     {
-        private string firstName;
+        public string FirstName { get; init; }
 
-        public string FirstName
-        {
-            get
-            {
-                return firstName;
-            }
-            private set
-            {
-                firstName = value;
-            }
-        }
+        public string LastName { get; init; }
 
-        public string LastName { get; }
-
-        public int YearOfBirth { get; }
+        public int YearOfBirth { get; init; }
 
         public Person(string firstName = "", string lastName = "", int yearOfBirth = 1900)
         {
