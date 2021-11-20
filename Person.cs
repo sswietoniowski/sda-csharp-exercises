@@ -40,6 +40,11 @@ namespace sda_csharp_exercises
             Console.WriteLine($"My name is {LastName}. {FirstName} {LastName}");
         }
 
+        public override string ToString()
+        {
+            return $"{{ firstName: \"{FirstName}\", lastName: \"{LastName}\", yearOfBirth: {YearOfBirth} }}"; // { firstName: "Jan", lastName: "Kowalski" }
+        }
+
         public bool IsAdult() => DateTime.Today.Year - YearOfBirth >= 18;
         //{
         //    return DateTime.Today.Year - YearOfBirth >= 18;
