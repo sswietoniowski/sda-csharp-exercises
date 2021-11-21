@@ -11,8 +11,10 @@ namespace sda_csharp_exercises
             Item sword = new Item();
             sword.Name = "Excalibur";
 
-            player.Stats.XP = 60;
-            System.Console.WriteLine(player.Stats.XP);
+            //player.Stats.XP = 60;
+            player.XP = 60;
+            //System.Console.WriteLine(player.Stats.XP);
+            System.Console.WriteLine(player.XP);
             player.Items.Add(sword);
             foreach (var item in player.Items)
             {

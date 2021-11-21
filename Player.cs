@@ -9,7 +9,20 @@ namespace sda_csharp_exercises
     class Player
     {
         public string Name { get; set; }
-        public PlayerStats Stats { get; set; } = new PlayerStats();
+        protected PlayerStats Stats { get; set; } = new PlayerStats();
         public List<Item> Items { get; set; } = new List<Item>();
+
+        public int XP
+        {
+            get
+            {
+                return Stats.XP;
+            }
+
+            set
+            {
+                Stats.XP = value;
+            }
+        }
     }
 }
